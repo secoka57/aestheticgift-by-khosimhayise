@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic Gift By Khosi Mhayise</title>
+    <meta content="Handcrafted gift hampers for birthdays, weddings, baby showers, and special occasions in South Africa" name="keywords">
+    <meta content="Aesthetic Gift By Khosi Mhayise — handcrafted gift hampers and bespoke gift services for birthdays, weddings, baby showers and corporate gifting across South Africa." name="description">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-blush: #f7e9ea;
+            --brand-lavender: #e6e0f8;
+            --brand-gold: #cfa76b;
+            --brand-deep: #3a2d2c;
+        }
+        
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            color: var(--brand-deep);
+            background-color: #ffffff;
+        }
+        
+        h1, h2, h3, .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            color: var(--brand-deep);
+        }
+        
+        /* Header Styles */
+        .header-container {
+            position: relative;
+            height: 100vh;
+            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://images.unsplash.com/photo-1581092580497-e0d23cbdf075?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        
+        .header-content {
+            max-width: 800px;
+        }
+        
+        .header-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--brand-deep);
+        }
+        
+        .header-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: var(--brand-deep);
+        }
+        
+        .btn {
+            background: var(--brand-gold);
+            color: #fff;
+            border-radius: 30px;
+            padding: 12px 24px;
+            transition: 0.3s;
+            border: none;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        .btn:hover {
+            opacity: 0.85;
+        }
+        
+        /* Navigation Styles */
+        .navbar {
+            background: #fff;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-brand img {
+            height: 50px;
+        }
+        
+        .navbar .nav-link {
+            color: var(--brand-deep);
+            font-weight: 600;
+            padding: 10px 15px;
+        }
+        
+        .navbar .nav-link:hover {
+            color: var(--brand-gold);
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-header p {
+            color: var(--brand-gold);
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        /* Team Section */
+        .team {
+            background-color: var(--brand-blush);
+        }
+        
+        .team-member {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+        
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid var(--brand-gold);
+        }
+        
+        .team-member h5 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        /* Footer Styles */
+        .footer {
+            background: var(--brand-blush);
+            color: var(--brand-deep);
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+        
+        .footer-contact {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .footer-contact h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .footer-contact p {
+            margin: 10px 0;
+        }
+        
+        .footer-social a {
+            color: var(--brand-deep);
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        
+        .footer-social a:hover {
+            color: var(--brand-gold);
+        }
+        
+        .footer p {
+            text-align: center;
+            margin: 0;
+        }
+        
+        /* Top Bar */
+        .top-bar {
+            background: var(--brand-blush);
+            color: var(--brand-deep);
+            padding: 5px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1001;
+        }
+        
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .top-bar a {
+            color: var(--brand-deep);
+            text-decoration: none;
+        }
+        
+        .top-bar a:hover {
+            color: var(--brand-gold);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-title {
+                font-size: 2rem;
+            }
+            
+            .header-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .navbar-brand img {
+                height: 40px;
+            }
+            
+            .nav-item {
+                text-align: center;
+            }
+            
+            .team-member {
+                margin-bottom: 30px;
+            }
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: var(--brand-gold);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+        
+        .back-to-top:hover {
+            background: var(--brand-deep);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar d-none d-md-block">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <i class="fa fa-phone-alt"></i> <a href="https://wa.me/27769130516" target="_blank">+27 76 913 0516</a> (WhatsApp)
+                </div>
+                <div>
+                    <a href="https://www.tiktok.com/@khosi_mhayise" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="logo2 - Copy.jpg" alt="Aesthetic Gift Logo" style="height:50px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hampers.html">Hampers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <div class="header-container">
+        <div class="header-content">
+            <h1 class="header-title">Aesthetic Gift By Khosi Mhayise</h1>
+            <p class="header-subtitle">Handcrafted gift hampers for birthdays, weddings, baby showers, and special occasions in South Africa</p>
+            <a class="btn" href="https://wa.me/27769130516" target="_blank">Place Your Order on WhatsApp</a>
+        </div>
+    </div>
+    
+    <!-- About Section -->
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                <p>Our Journey</p>
+                <h2>About the Founder</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p>
+                        Khosi Mhayise, the visionary behind Aesthetic Gift By Khosi Mhayise, is a passionate creative entrepreneur
+                        from Mkhondo, Mpumalanga.
+                        Her journey began with a deep love for crafting thoughtful, elegant, and personalized gifts that make people
+                        feel seen and appreciated.
+                        What started as a small hobby quickly grew into a full-fledged brand known for its attention to detail,
+                        aesthetic presentation, and heartfelt touch.
+                    </p>
+                    <p>
+                        Today, under Khosi’s leadership, Aesthetic Gift By Khosi Mhayise continues to redefine gifting — offering
+                        bespoke hampers that blend luxury, emotion, and creativity.
+                        Every box is a reflection of her belief that gifting is not just about giving an item, but sharing love,
+                        joy, and lasting memories.
+                    </p>
+                    <div class="text-center mt-4">
+                        <a class="btn" href="https://wa.me/27769130516" target="_blank">Place Your Order on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Team Section -->
+    <div id="team" class="team section">
+        <div class="container">
+            <div class="section-header">
+                <p>Meet The Maker</p>
+                <h2>Our Small Team</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="team-member">
+                        <img src="khosi.png.jpg" alt="Khosi Mhayise">
+                        <h5>Founder & Lead Curator</h5>
+                        <p>
+                            Khosi Mhayise, the visionary behind Aesthetic Gift By Khosi Mhayise, is a passionate creative
+                            entrepreneur from Mkhondo, Mpumalanga. Her journey began with a deep love for crafting
+                            thoughtful, elegant, and personalized gifts that make people feel seen and appreciated. What
+                            started as a small hobby quickly grew into a full-fledged brand known for its attention to
+                            detail, aesthetic presentation, and heartfelt touch.
+                            Today, under Khosi’s leadership, Aesthetic Gift By Khosi Mhayise continues to redefine gifting —
+                            offering bespoke hampers that blend luxury, emotion, and creativity. Every box is a reflection
+                            of her belief that gifting is not just about giving an item, but sharing love, joy, and lasting
+                            memories.
+                        </p>
+                        <div class="mt-3">
+                            <a href="https://www.tiktok.com/@khosi_mhayise" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-contact">
+                <h2>Our Studio</h2>
+                <p><i class="fa fa-map-marker-alt"></i> Mkhondo, 2380, Mpumalanga, South Africa</p>
+                <p><i class="fa fa-phone-alt"></i> <a href="https://wa.me/27769130516" target="_blank" style="color:#3a2d2c;">+27 76 913 0516</a></p>
+                <div class="footer-social mt-2">
+                    <a href="https://www.tiktok.com/@khosi_mhayise" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <p>&copy; 2025 Aesthetic Gift By Khosi Mhayise. All Rights Reserved.</p>
+        </div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- JS Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Back to top button visibility
+        window.addEventListener('scroll', function() {
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 500) {
+                backToTop.style.opacity = '1';
+                backToTop.style.visibility = 'visible';
+            } else {
+                backToTop.style.opacity = '0';
+                backToTop.style.visibility = 'hidden';
+            }
+        });
+    </script>
+</body>
+</html>
+
